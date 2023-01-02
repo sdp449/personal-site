@@ -1,0 +1,225 @@
+/* CSS for final project website */
+
+/* google font: readex pro*/
+@import @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap');
+
+/* page colors */
+
+:root {
+  --bg-blue: #BCDAE3;
+  --font-blue: #013B4E;
+  --medium-blue: #4C8A9F;
+  --grey-blue: #76AFC2;
+}
+
+/* main body */
+
+body {
+	width: 100%;
+	font-family: 'Readex Pro', sans-serif;
+	color: var(--font-blue);
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 90%;
+	margin-left: 5%;
+	margin-right:5%;
+}
+
+.intro {
+	margin-top: 2em;
+}
+
+img.profile {
+	border-radius: 10px;
+}
+
+footer {margin-top: 3em;}
+
+footer > p {text-align: center;}
+a.footlink {text-decoration: none;}
+
+
+/* header and nav */
+
+header {
+	margin-left: 5%;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+}
+
+.title > * {margin-right: 2%}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+a.navlink {
+	font-size: 1.2em;
+	margin-top: 0.5em;
+	text-decoration-color: var(--medium-blue)
+}
+
+/* contact and cards */
+
+.contact-form, .exp-card, .pro-card {
+	background: var(--bg-blue);
+	margin: 0;
+	padding: 2em;
+	/* border: 4px solid var(--medium-blue); */
+	border-radius: 10px;
+}
+
+input[type=text], input[type=email] {
+	margin-left: 1em;
+	width: 50%;
+}
+
+textarea {
+	width: 80%;
+}
+
+input[type=text], input[type=email], textarea {
+	border: none;
+	border-bottom: 2px solid var(--medium-blue);
+}
+
+input[type=submit] {
+	width: 5em;
+	height: 2em;
+	background-color: white;
+	color: var(--font-blue);
+	border: none;
+}
+
+.exp-card, .pro-card {
+	display: block;
+	margin-top: 1em;
+	border: none;
+}
+
+img.preview {
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.company {
+	display: flex;
+}
+
+.company > * {
+	margin-right: 1em;
+	align-items: baseline;
+}
+
+
+/* heading and text */
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h3.company {font-size: 1.5em;}
+
+section.intro > p {
+	line-height: 1.4em;
+}
+
+p.role {
+	font-size: 1.3em;
+	font-weight: 400;
+	text-decoration: underline;
+	text-decoration-color: var(--grey-blue);
+}
+
+ul {
+	list-style-type: circle;
+}
+
+a:link, a:visited {color: var(--font-blue);}
+
+a:hover, a:active {color: var(--medium-blue);}
+
+/* media queries */ 
+
+@media (min-width: 45em) {
+	
+	h1 {font-size: 2.5em;}
+	
+	h2 {font-size: 2em;}
+
+	section.intro {
+		display: flex;
+		margin-bottom: 3em;
+	}
+	
+	
+	.intro-text {
+		margin-left: 5%;
+		max-width: 27em;
+		text-align: left;
+	}
+	
+	.intro-text > p {
+		margin-left: 0;
+		padding-top: 0;
+		margin-top: 0;
+	}
+	
+	.contact-form {max-width: 50em;}
+		  
+	.tiles {
+		display: grid;
+		grid-template-columns: 1fr 1fr; 
+		grid-auto-rows: minmax(75px, auto);
+		column-gap: 5%;
+		row-gap: 20px;
+	}
+
+	nav {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 2em;
+	} 
+	
+	nav > a {
+		margin-right: 5%;
+	}
+	
+	.exp-card, .pro-card {
+	margin-top: 2em;
+}
+}	
+
+@media only screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--font-blue);
+    color: white;
+  }
+  
+a:link, a:visited {color: white;}
+
+a:hover, a:active {color: var(--grey-blue);}
+
+.contact-form, .exp-card, .pro-card {
+	background: #005774;
+	margin: 0;
+	padding: 2em;
+	/* border: 4px solid var(--medium-blue); */
+	border-radius: 10px;
+}

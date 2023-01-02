@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>stella davis-perney</title>
+	<link rel="stylesheet" href="final-styles.css">
+	<link rel="icon" type="image/png" href="images/site-icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+	<header>
+		<div class="title">
+			<img src="images/site-icon.png" width="32" height="32" alt="star icon">
+			<h1>stella davis-perney</h1>
+			<img src="images/site-icon.png" width="32" height="32" alt="star icon">
+		</div>
+		<nav>
+			<a class="navlink" href="index.html">about</a>
+			<a class="navlink" href="experiences.html">experiences</a>
+			<a class="navlink" href="projects.html">projects</a>
+		</nav>
+	</header>
+	
+	<main class="about">
+		<section class="intro">
+			<img 
+				src="images/stella215.jpg" 
+				srcset="images/stella215.jpg 215w, images/stella435.jpg 435w" 
+				sizes="(max-width: 215px) 215px, (min-width: 216px) 435px"   
+				width="215" 
+				height="215" 
+				class="profile" 
+				alt="profile picture">
+			<div class="intro-text">
+				<p>Hi, I’m Stella! I’m a senior at NYU studying Media, Culture, and Communications with a minor in Web Programming and Applications.</p>
+				<p>I’m interested in exploring the ways people connect and communciate narratives across different mediated platforms with an interdisciplinary approach. I have experience in PR, Branding, Partnerships, and Analytics, and I’m always looking to grow and learn more in these areas.</p>
+			</div>
+		</section>
+		<section class="contact-form">
+			<h3>contact me</h3>
+			<form action="https://formspree.io/f/mwkzgbzn" method="post">
+				<p>name: <input type="text" name="name" required></p>
+				<p>email: <input type="email" name="email" required></p>
+				<p>message:</p>
+				<textarea name="message" cols="50" rows="10" placeholder="say hi!"></textarea>
+				<p><input type="submit" value="Send"></p>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p><a class="footlink" href="https://i6.cims.nyu.edu/~sdp449/index.html">stella davis-perney</a> | <a class="footlink" href="https://cs.nyu.edu/courses/fall22/CSCI-UA.0004-004/">intro to web design</a> | 2022</p>
+	</footer>
+		
+  </body>
+  <script src="final-script.js"></script>
+</html>
